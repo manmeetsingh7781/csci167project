@@ -15,12 +15,12 @@ Once you have Python Installed run the follow commands in project folder
 1. Open Terminal or Command Prompt 
 
 2. Create Python Virtual Env
-    - python -m venv .env
+    - `python -m venv .env`
 
 3. Activate the Virtual Environment we just created
-    - MacOS/Linux - bash/zsh → $ `source .env/bin/activate`
-    - Windows - CMD → > `source .env/Scripts/activate.bat`
-    - Windows - PowerShell → > `source .env/Scripts/activate.ps1`
+    - MacOS/Linux - bash/zsh →  `$ source .env/bin/activate`
+    - Windows - CMD → `> source .env/Scripts/activate.bat`
+    - Windows - PowerShell → `> source .env/Scripts/activate.ps1`
 
 4. Install libraries by running this
     - `pip install -r requirements.txt`
