@@ -1,5 +1,7 @@
 # README
 
+For Google Colabs download -> CSCI167Project.ipynb
+
 Created: November 29, 2024 12:11 PM
 
 # Step by Step how to Run this Project
@@ -24,5 +26,5 @@ Once you have Python Installed run the follow commands in project folder
     - `pip install -r requirements.txt`
 
 5. Run the app 
-    - > `python app.py`
+    - `python app.py`
 
