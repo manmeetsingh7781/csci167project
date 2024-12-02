@@ -3,7 +3,6 @@
 # Working Demo -> [CSCI167Project.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/CSCI167Project.ipynb)
 
 -------
-
 # Step by Step how to Run this Project on your Machine
 
 Make sure you have python version ≤ 3.11  installed on your system if not then follow the link below
@@ -27,4 +26,5 @@ Once you have Python Installed run the follow commands in project folder
 
 5. Run the app 
     - `python app.py`
+    - To quickly test -> Run `py test_mnst.py`
 
