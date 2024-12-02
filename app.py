@@ -32,7 +32,7 @@ def save_and_predict_image():
     resize = image.resize((64, 64)).convert("L")
     resize.save(file_name)
     predicted_output = f'Predicted Text: {predict_image(file_name)}'
-    canvas.create_text(400, 50, text=predicted_output, font=("Arial", 24), fill="blue")
+    canvas.create_text(100, 50, text=predicted_output, font=("Arial", 24), fill="blue")
 
     print(f"Image saved as {file_name}")
 
@@ -41,7 +41,7 @@ root = Tk()
 root.title("Handwritten Digit Recoginition")
 
 # Canvas dimensions
-canvas_width, canvas_height = 1024, 1024
+canvas_width, canvas_height = 400, 400
 
 # Create a Canvas widget
 canvas = Canvas(root, width=canvas_width, height=canvas_height, bg="white")
