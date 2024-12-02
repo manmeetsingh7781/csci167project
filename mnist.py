@@ -114,7 +114,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.01,  momentum=0.9, weight_decay=0
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', patience=3, factor=0.5)
 
 # number of pass through dataset
-epoches = 100
+epoches = 10
 
 # Training function
 def train_model(epochs):
@@ -166,16 +166,19 @@ def test_model():
     print(f"Accuracy: {accuracy:.2f}%")
     model_initial += f"Accuracy: {accuracy:.2f}%\n"
 
+
 start_time = time.time()
 
+
+# if model found and can be loaded then load
 try:
     model_path = torch.load(model_path, weights_only=True)
     model.load_state_dict(model_path)
     # futher train the model
     print("Model Loaded, MNSIT [0-9]")
     model_initial += "Model Loaded\n"
-    train_model(epoches)
 
+# if model can not be found or could not be loaded train, save and load
 except:
     model_path = None
     print("File not found, training a model!")
