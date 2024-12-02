@@ -26,5 +26,5 @@ Once you have Python Installed run the follow commands in project folder
 
 5. Run the app 
     - `python app.py`
-    - To quickly test -> Run `py test_mnst.py`
+    - To quickly test -> Run `python test_mnst.py`
 
