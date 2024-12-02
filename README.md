@@ -1,8 +1,6 @@
 # README
 
-For Google Colabs download -> CSCI167Project.ipynb
-
-Created: November 29, 2024 12:11 PM
+# For Google Colabs download -> CSCI167Project.ipynb
 
 # Step by Step how to Run this Project
 
