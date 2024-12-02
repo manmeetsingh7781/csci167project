@@ -2,7 +2,9 @@
 
 # Working Demo -> [CSCI167Project.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/CSCI167Project.ipynb)
 
-# Step by Step how to Run this Project
+-------
+
+# Step by Step how to Run this Project on your Machine
 
 Make sure you have python version ≤ 3.11  installed on your system if not then follow the link below
 
