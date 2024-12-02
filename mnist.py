@@ -233,14 +233,6 @@ def visualize_user_defined_images():
         plt.show()
 
 
-"""UNCOMMENT these lines to visualize the model"""
-
-visualize_predictions()
-
-"""UNCOMMENT these lines to test the USER DEFINED IMAGES"""
-visualize_user_defined_images() 
-
-
 
 def predict_image(image_path):
     # Load the trained model
