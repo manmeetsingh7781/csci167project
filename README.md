@@ -1,6 +1,6 @@
 # README
 
-# For Google Colabs download -> CSCI167Project.ipynb
+# For Google Colabs download -> [CSCI167Project.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/CSCI167Project.ipynb)
 
 # Step by Step how to Run this Project
 
