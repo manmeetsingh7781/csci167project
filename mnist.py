@@ -13,7 +13,7 @@ from PIL import Image
 class_labels = {
     0: "0", 1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8", 9: "9"
 }
-model_path = './model/handwriting_classifier_default_2.pth'
+model_path = './model/handwriting_classifier_default.pth'
 
 # this is tracing the file print statements and sending to web page
 model_initial = ""
@@ -114,7 +114,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.01,  momentum=0.9, weight_decay=0
 scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', patience=3, factor=0.5)
 
 # number of pass through dataset
-epoches = 20
+epoches = 100
 
 # Training function
 def train_model(epochs):
@@ -142,7 +142,7 @@ def train_model(epochs):
         scheduler.step(val_loss / len(val_loader))
         print(f"Epoch {epoch + 1}, Train Loss: {running_loss / len(train_loader):.4f}, Val Loss: {val_loss / len(val_loader):.4f}")
 
-    torch.save(model.state_dict(), "./model/handwriting_classifier_default_2.pth")
+    torch.save(model.state_dict(), "./model/handwriting_classifier_default.pth")
     model_initial += "Model Trained and Saved\n"
     print("Model Trained and Saved")
 
@@ -174,7 +174,7 @@ try:
     # futher train the model
     print("Model Loaded, MNSIT [0-9]")
     model_initial += "Model Loaded\n"
-    # train_model(epoches)
+    train_model(epoches)
 
 except:
     model_path = None
