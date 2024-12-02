@@ -14,9 +14,10 @@ def draw(event):
     """Draw a line to the current mouse position."""
     global last_x, last_y
     # Draw on the canvas
-    canvas.create_line(last_x, last_y, event.x, event.y, smooth=True, capstyle="round", fill="black", width=12)
+    # smooth storkes 
+    canvas.create_line(last_x, last_y, event.x, event.y, smooth=True, capstyle="round", fill="black", width=20)
     # Draw on the PIL Image
-    draw_image.line([last_x, last_y, event.x, event.y],fill="black", width=12)
+    draw_image.line([last_x, last_y, event.x, event.y], fill="black", width=20)
     last_x, last_y = event.x, event.y
 
 def clear_canvas():
@@ -27,8 +28,9 @@ def clear_canvas():
 def save_and_predict_image():
     """Predict the canvas drawing to an image file."""
     file_name = "./images/canvas_drawing.png"
-    resized = image.resize((48,48))
-    resized.save(file_name)
+    # save image of size 64x64 and greyscale
+    resize = image.resize((64, 64)).convert("L")
+    resize.save(file_name)
     predicted_output = f'Predicted Text: {predict_image(file_name)}'
     canvas.create_text(400, 50, text=predicted_output, font=("Arial", 24), fill="blue")
 
