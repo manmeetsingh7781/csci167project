@@ -1,6 +1,7 @@
 # README
 
-# Working Demo -> [MNIST Model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/MNIST_Model.ipynb)
+# Working Demo MNIST -> [MNIST Model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/MNIST_Model.ipynb)
+# Working Demo Image Recognition -> [image_recognition_model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/image_recognition_model.ipynb)
 
 -------
 # Step by Step how to Run this Project on your Machine
@@ -26,5 +27,6 @@ Once you have Python Installed run the follow commands in project folder
 
 5. Run the app 
     - `python app.py`
-    - To quickly test -> Run `python test_mnst.py`
+    - To quickly test MNIST -> Run `python test_mnst.py`
+
 
