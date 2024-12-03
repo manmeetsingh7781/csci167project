@@ -1,8 +1,8 @@
 # README
 
 # Working Demo 
-MNIST -> [MNIST Model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/MNIST_Model.ipynb)
-Image Recognition -> [image_recognition_model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/image_recognition_model.ipynb)
+#### MNIST -> [MNIST Model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/MNIST_Model.ipynb)
+#### Image Recognition -> [image_recognition_model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/image_recognition_model.ipynb)
 
 -------
 # Step by Step how to Run this Project on your Machine
