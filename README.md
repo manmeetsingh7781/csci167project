@@ -1,6 +1,6 @@
 # README
 
-# Working Demo -> [CSCI167Project.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/CSCI167Project.ipynb)
+# Working Demo -> [MNIST Model.ipynb](https://github.com/manmeetsingh7781/csci167project/blob/main/MNIST_Model.ipynb)
 
 -------
 # Step by Step how to Run this Project on your Machine
